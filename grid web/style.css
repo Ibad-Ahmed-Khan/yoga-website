@@ -1,0 +1,131 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.parent {
+  height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  place-content: center;
+  background: hotpink;
+  height: 6rem;
+}
+
+.nav__list {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  place-content: center;
+}
+
+.nav__list__ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.nav__list__twoul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all ease-in-out 0.4s;
+}
+
+.nav__list__ul a:hover {
+  font-size: 1.2rem;
+  transition: all ease-in 0.2s;
+  color: black;
+}
+
+.nav__list__twoul a:hover {
+  font-size: 2.2rem;
+  transition: all ease-in-out 0.5s;
+  color: aliceblue;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-left: 3rem;
+  letter-spacing: 3px;
+}
+
+/* main */
+
+.main {
+  padding-inline: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
+  background: skyblue;
+  height: 30rem;
+  place-content: center;
+}
+
+.main__left,
+.main__right {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-weight: bold;
+  background: none;
+  border: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all ease-in-out 0.4s;
+}
+
+.btn:hover {
+  border: 1px solid;
+  transition: all ease-in-out 0.4s;
+  padding: 2rem;
+}
+
+/* footer */
+
+.footer {
+  height: 10.7rem;
+  background: red;
+  display: grid;
+  place-self: center;
+}
+
+.footer__up,
+.footer__down {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* border: 3px solid green; */
+  padding-left: 4rem;
+}
+
+.box {
+  width: 3rem;
+  height: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 2px solid;
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}

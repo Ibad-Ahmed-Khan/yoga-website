@@ -1,0 +1,126 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: space-around;
+  align-items: center;
+  background: green;
+  height: 5rem;
+}
+
+.header > * {
+  margin-right: 20rem;
+}
+
+.nav {
+  width: 100%;
+}
+
+ul {
+  width: 250%;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 3px solid green; */
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.logo a {
+  font: 2rem black bold;
+}
+
+/* nav hover */
+
+li a:hover {
+  color: red;
+  transition: all ease-in-out 0.3s;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  background: red;
+  height: 2px;
+  transform: scale(0, 1);
+  transition: all ease-in-out 0.3s;
+  transform-origin: left;
+}
+
+li a:hover::after {
+  content: "";
+  transform: scale(1, 1);
+  transform-origin: right;
+}
+
+/* main */
+
+.main {
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30rem;
+}
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  text-transform: capitalize;
+  letter-spacing: 0.3px;
+}
+
+.main p {
+  width: 28rem;
+}
+
+.btn {
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: none;
+  text-align: left;
+  background: transparent;
+  transition: all ease-in 0.3s;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  transition: all ease-in 0.3s;
+  font-size: 1rem;
+}
+
+.pepsi {
+  width: 20rem;
+  height: 26rem;
+}
+
+/* footer */
+
+.footer {
+  display: grid;
+  place-items: center;
+  height: 10rem;
+}
+
+h1:hover,
+h3:hover {
+  font-size: 2rem;
+}

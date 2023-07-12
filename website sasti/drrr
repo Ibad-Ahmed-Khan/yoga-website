@@ -1,0 +1,28 @@
+v
+  height: 100vh;
+  margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;c
+  gap: 2rem;
+}
+
+.parent > * {
+  /* border: 2px solid; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background: black; */
+}
+
+.eight {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: red;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
